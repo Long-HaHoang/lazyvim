@@ -14,3 +14,8 @@ vim.opt.autoindent = true
 
 -- Disable the inlay hints (additional information about types and parameter names) because it clutters my view
 vim.g.lazyvim_no_inlay_hints = false
+
+-- Enable absolute line numbers
+vim.opt.number = true
+-- Enable relative line numbers
+vim.opt.relativenumber = true
