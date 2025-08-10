@@ -19,3 +19,5 @@ vim.g.lazyvim_no_inlay_hints = false
 vim.opt.number = true
 -- Enable relative line numbers
 vim.opt.relativenumber = true
+
+vim.opt.spelllang = { "en", "de" }
