@@ -5,4 +5,5 @@ if vim.g.vscode then
 else
   -- Ordinary Neovim
   require("config.lazy")
+  require("user.filetype_mappings")
 end
