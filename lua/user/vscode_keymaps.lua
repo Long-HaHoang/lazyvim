@@ -6,6 +6,8 @@ keymap("n", "<Space>", "", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.clipboard = "unnamedplus"
+
 -- yank to system clipboard
 keymap({ "n", "v" }, "<leader>y", '"+y', opts)
 
@@ -27,3 +29,14 @@ keymap("v", "p", '"_dP', opts)
 
 -- removes highlighting after escaping vim search
 keymap("n", "<Esc>", "<Esc>:noh<CR>", opts)
+
+-- Better line start/end
+keymap("n", "H", "^", opts)
+keymap("n", "L", "$", opts)
+keymap("v", "H", "^", opts)
+keymap("v", "L", "$", opts)
+
+-- Better escape
+keymap("i", "jk", "<ESC>", opts)
+keymap("n", "<ESC>", "<ESC>:noh<CR>", opts)
+keymap("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode with double Esc" })
