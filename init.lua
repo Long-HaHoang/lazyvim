@@ -6,4 +6,5 @@ else
   -- Ordinary Neovim
   require("config.lazy")
   require("user.filetype_mappings")
+  require("user.commands")
 end

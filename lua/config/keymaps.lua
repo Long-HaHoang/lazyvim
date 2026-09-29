@@ -2,11 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- config/options.loa
-local opt = vim.opt
-
-opt.backup = false
-
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
@@ -18,7 +13,6 @@ keymap("v", "L", "$", opts)
 
 -- Better escape
 keymap("i", "jk", "<ESC>", opts)
-keymap("n", "<ESC>", "<ESC>:noh<CR>", opts)
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode with double Esc" })
 
 -- Tab switch buffer
